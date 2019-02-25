@@ -42,6 +42,7 @@
 		33FBF42016A8BF0D00473052 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33FBF41E16A8BF0D00473052 /* InfoPlist.strings */; };
 		33FBF42A16A8BF6400473052 /* LRTVDBAPIClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FBF42916A8BF6400473052 /* LRTVDBAPIClientTests.m */; };
 		DF01C37D54CA4DBAA613D93E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FE1D6D6CE24AF6817D9421 /* libPods.a */; };
+		F25C80BE5FACD78AECBB1E7B /* libPods-LRTVDBAPIClientExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D62D1071BFA452DF43915CD6 /* libPods-LRTVDBAPIClientExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,7 +96,10 @@
 		33FBF42816A8BF6400473052 /* LRTVDBAPIClientTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LRTVDBAPIClientTests.h; path = ../../UnitTests/LRTVDBAPIClientTests.h; sourceTree = "<group>"; };
 		33FBF42916A8BF6400473052 /* LRTVDBAPIClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LRTVDBAPIClientTests.m; path = ../../UnitTests/LRTVDBAPIClientTests.m; sourceTree = "<group>"; };
 		5D2CDA13BE0E427182785252 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8B1130B4DC8E8C7BDBB2051A /* Pods-LRTVDBAPIClientExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTVDBAPIClientExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LRTVDBAPIClientExample/Pods-LRTVDBAPIClientExample.debug.xcconfig"; sourceTree = "<group>"; };
 		C0FE1D6D6CE24AF6817D9421 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62D1071BFA452DF43915CD6 /* libPods-LRTVDBAPIClientExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LRTVDBAPIClientExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EF5E1DA3278917693B8C58 /* Pods-LRTVDBAPIClientExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTVDBAPIClientExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRTVDBAPIClientExample/Pods-LRTVDBAPIClientExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				33AD061616506C8900061E2B /* Foundation.framework in Frameworks */,
 				33AD061816506C8900061E2B /* CoreGraphics.framework in Frameworks */,
 				DF01C37D54CA4DBAA613D93E /* libPods.a in Frameworks */,
+				F25C80BE5FACD78AECBB1E7B /* libPods-LRTVDBAPIClientExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +172,7 @@
 				33AD061216506C8900061E2B /* Frameworks */,
 				33AD061016506C8900061E2B /* Products */,
 				5D2CDA13BE0E427182785252 /* Pods.xcconfig */,
+				F7A22A7B3B13CB59100961B5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +197,7 @@
 				33AD061716506C8900061E2B /* CoreGraphics.framework */,
 				33FBF41716A8BF0D00473052 /* SenTestingKit.framework */,
 				C0FE1D6D6CE24AF6817D9421 /* libPods.a */,
+				D62D1071BFA452DF43915CD6 /* libPods-LRTVDBAPIClientExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,6 +289,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F7A22A7B3B13CB59100961B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B1130B4DC8E8C7BDBB2051A /* Pods-LRTVDBAPIClientExample.debug.xcconfig */,
+				F5EF5E1DA3278917693B8C58 /* Pods-LRTVDBAPIClientExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,10 +305,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33AD063316506C8900061E2B /* Build configuration list for PBXNativeTarget "LRTVDBAPIClientExample" */;
 			buildPhases = (
+				96905AE84EC76B86F4EEA3F3 /* [CP] Check Pods Manifest.lock */,
 				33AD060B16506C8900061E2B /* Sources */,
 				33AD060C16506C8900061E2B /* Frameworks */,
 				33AD060D16506C8900061E2B /* Resources */,
-				9DED60F7189348BA83CC1C10 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,7 +326,6 @@
 				33FBF41116A8BF0D00473052 /* Sources */,
 				33FBF41216A8BF0D00473052 /* Frameworks */,
 				33FBF41316A8BF0D00473052 /* Resources */,
-				339E9D2D16F0084C0063A921 /* Copy Pods Resources */,
 				33FBF41416A8BF0D00473052 /* ShellScript */,
 			);
 			buildRules = (
@@ -376,20 +391,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		339E9D2D16F0084C0063A921 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"";
-		};
 		33FBF41416A8BF0D00473052 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,19 +404,27 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-		9DED60F7189348BA83CC1C10 /* Copy Pods Resources */ = {
+		96905AE84EC76B86F4EEA3F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LRTVDBAPIClientExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -532,14 +541,14 @@
 		};
 		33AD063416506C8900061E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D2CDA13BE0E427182785252 /* Pods.xcconfig */;
+			baseConfigurationReference = 8B1130B4DC8E8C7BDBB2051A /* Pods-LRTVDBAPIClientExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LRTVDBAPIClientExample/LRTVDBAPIClientExample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "LRTVDBAPIClientExample/LRTVDBAPIClientExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
@@ -553,14 +562,14 @@
 		};
 		33AD063516506C8900061E2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D2CDA13BE0E427182785252 /* Pods.xcconfig */;
+			baseConfigurationReference = F5EF5E1DA3278917693B8C58 /* Pods-LRTVDBAPIClientExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LRTVDBAPIClientExample/LRTVDBAPIClientExample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "LRTVDBAPIClientExample/LRTVDBAPIClientExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
